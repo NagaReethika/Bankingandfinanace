@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #e5f7c8;
+  padding: 20px 0 30px 0;
+}
+
+input,
+.btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  margin: 5px 0;
+  opacity: 0.70;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #86dd39;
+  color: white;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #73e19f;
+  color: rgb(10, 19, 19);
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #cbf0cd;
+}
+
+/* Two-column layout */
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 8px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ecf0cc;
+  border: 1px solid #1a1717;
+  border-radius: 50%;
+  padding: 5px 5px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #110f0f;
+  border-radius: 0px 0px 8px 4px;
+  padding: 5px;
+}
+
+.bottom-container .btn {
+  background-color: #7df9cb;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 2px;
+}
