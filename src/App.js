@@ -1,27 +1,26 @@
-// src/App.js
-
 import React from 'react';
-import './App.css'; // Import your global styles
-import Home from './Components/Home'; // Import the Home component
-import About from './Components/About'; // Import the About component
-import Contact from './Components/Contact'; // Import the Contact component
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './Components/Home';
+import Login from './Components/Login';
+import About from './Components/About';
+import Contact from './Components/Contact';
+import Navbar from './Components/Navbar';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>My React App</h1>
-      </header>
-      <main>
-        <Home />
-        <About />
-        <Contact />
-      </main>
-      <footer>
-        <p>Footer content here</p>
-      </footer>
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
