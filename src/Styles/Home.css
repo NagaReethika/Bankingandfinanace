@@ -1,0 +1,99 @@
+/* Home.css */
+
+/* Define your color palette */
+:root {
+    --primary-color: #171a19; /* Primary color for buttons and headings */
+    
+    --background-color: #efe8e8; /* Background color for the entire page */
+   
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main container for the homepage with background image */
+  .home_main_div {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('C:\Users\DELL\reactbasics\basic\src\Images\img1.webp'); /* Replace with the path to your background image */
+    background-size: cover; /* Cover the entire div with the background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating of the background image */
+  }
+  
+  /* Styles for the main content */
+  .home_div {
+    background-color: var(--content-background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  /* Heading styles */
+  h1, h2, h3 {
+    color: var(--primary-color);
+  }
+  
+  /* Transparent background for bank name */
+  h1 {
+   
+    padding: 20px; /* Add padding for better readability */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+  }
+  
+  /* Wave animation for the waviy class */
+  .waviy {
+    font-size: 2.7rem;
+    margin-top: 20px;
+  }
+  
+  .waviy span {
+    display: inline-block;
+    animation: wave 0.6s infinite;
+  }
+  
+  @keyframes wave {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  /* Text alignment */
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Utility classes for margin and padding */
+  .pt-5 {
+    padding-top: 3rem;
+  }
+  
+  .m-5 {
+    margin: 3rem;
+  }
+  
+  .m-3 {
+    margin: 1.5rem;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
